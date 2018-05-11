@@ -1,0 +1,29 @@
+
+<form id="1110733711">
+<property name="name" value="development.SitePlanning-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="sitePlan_siteName" type="InputText" id="1113424055">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;siteName (sitePlan)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="sitePlan/siteName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="sitePlan_sitePlanningId" type="InputText" id="844264035">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;sitePlanningId (sitePlan)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="sitePlan/sitePlanningId"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#FBB767" type="basicType" outId="SignalProcessInstanceId" value="java.lang.Long" id="SignalProcessInstanceId"/>
+<dataHolder inputId="" name="#000000" type="basicType" outId="approve" value="java.lang.Boolean" id="approve"/>
+<dataHolder inputId="" name="#A7E690" type="className" outId="rnd" value="java.util.Random" id="rnd"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="seedScore" value="java.lang.Integer" id="seedScore"/>
+<dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="sitePlan" value="demo.development.Planning" id="sitePlan"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="siteScore" value="java.lang.Integer" id="siteScore"/>
+<dataHolder inputId="" name="#FF8881" type="basicType" outId="targetGroup" value="java.lang.String" id="targetGroup"/>
+<dataHolder inputId="" name="#9BCAFA" type="className" outId="wsError" value="org.jbpm.bpmn2.handler.WorkItemHandlerRuntimeException" id="wsError"/>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="wsErrorStack" value="java.lang.String" id="wsErrorStack"/>
+</form>

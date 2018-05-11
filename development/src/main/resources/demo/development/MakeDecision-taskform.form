@@ -1,0 +1,49 @@
+
+<form id="2077969979">
+<property name="name" value="MakeDecision-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="approve" type="CheckBox" id="1786726774">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;inApprove (approve)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="inApprove"/>
+<property name="outputBinding" value="outApprove"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="4" name="sitePlan_adjustedScore" type="InputTextInteger" id="1743994098">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;adjustedScore (sitePlan)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="inPlan/adjustedScore"/>
+<property name="outputBinding" value="outPlan/adjustedScore"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="1" name="sitePlan_siteName" type="InputText" id="1032434760">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;siteName (sitePlan)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="inPlan/siteName"/>
+<property name="outputBinding" value="outPlan/siteName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="sitePlan_sitePlanningId" type="InputText" id="226733630">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;sitePlanningId (sitePlan)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="inPlan/sitePlanningId"/>
+<property name="outputBinding" value="outPlan/sitePlanningId"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="sitePlan_siteScore" type="InputTextInteger" id="639191256">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;siteScore (sitePlan)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="inPlan/siteScore"/>
+<property name="outputBinding" value="outPlan/siteScore"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="inApprove" name="#000000" type="basicType" outId="outApprove" value="java.lang.Boolean" id="approve"/>
+<dataHolder inputId="inPlan" name="#E9E371" type="dataModelerEntry" outId="outPlan" value="demo.development.Planning" id="sitePlan"/>
+</form>

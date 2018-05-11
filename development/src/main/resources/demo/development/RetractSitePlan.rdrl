@@ -1,0 +1,14 @@
+package demo.development;
+
+import java.lang.Number;
+
+rule "RetractSitePlan"
+	dialect "mvel"
+	no-loop false
+	ruleflow-group "resetValidationError"
+	when
+		plan : Planning( )
+	then
+		retract( plan );
+		System.out.println("Executed Rule: " + drools.getRule().getName() );
+end

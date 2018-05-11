@@ -1,0 +1,14 @@
+package demo.development;
+
+import java.lang.Number;
+
+rule "RetractValidationError"
+	dialect "mvel"
+	ruleflow-group "resetValidationError"
+	no-loop false
+	when
+		error : ValidationError( )
+	then
+		retract( error );
+		System.out.println("Executed Rule: " + drools.getRule().getName() );
+end

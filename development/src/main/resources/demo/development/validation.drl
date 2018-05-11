@@ -1,0 +1,36 @@
+package demo.development;
+
+rule "Invalid Site Planning ID"
+	dialect "mvel"
+	ruleflow-group "ValidatePlan"
+	when
+		Planning( sitePlanningId not matches "^NA\\d{6}$" && sitePlanningId not matches "^SN\\d{5}$" )
+	then
+		ValidationError fact0 = new ValidationError();
+		fact0.setCause( "Invalid Site Planning Id" );
+		insert( fact0 );
+		System.out.println("Executed Rule: " + drools.getRule().getName() );
+end
+
+rule "Empty Site Name"
+	dialect "mvel"
+	ruleflow-group "ValidatePlan"
+	when
+		Planning( siteName == null || siteName.length() == 0)
+	then
+		ValidationError fact0 = new ValidationError();
+		fact0.setCause( "Null Site Name" );
+		insert( fact0 );
+		System.out.println("Executed Rule: " + drools.getRule().getName() );
+end
+
+rule "Retract Site Plan after Validation"
+	dialect "mvel"
+	ruleflow-group "ValidatePlan"
+	salience -10
+	when
+		fact : Planning( )
+	then
+		retract(fact);
+		System.out.println("Executed Rule: " + drools.getRule().getName() );
+end

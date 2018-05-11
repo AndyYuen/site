@@ -1,0 +1,23 @@
+
+<form id="112844749">
+<property name="name" value="sitePlanCorrection-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="sitePlan_siteName" type="InputText" id="1882513910">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;siteName (sitePlan)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="taskInPlan/siteName"/>
+<property name="outputBinding" value="taskOutPlan/siteName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="sitePlan_sitePlanningId" type="InputText" id="695277954">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;sitePlanningId (sitePlan)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="taskInPlan/sitePlanningId"/>
+<property name="outputBinding" value="taskOutPlan/sitePlanningId"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="taskInPlan" name="#E9E371" type="dataModelerEntry" outId="taskOutPlan" value="demo.development.Planning" id="sitePlan"/>
+</form>
